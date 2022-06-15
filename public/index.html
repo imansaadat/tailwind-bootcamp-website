@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bootcamp Website</title>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="fixed w-full left-0 top-0 z-10 bg-dark">
+      <div class="container">
+        <nav class="flex justify-between py-5">
+          <!-- Logo -->
+          <div class="text-xl text-white z-10">
+            <a href="#">Frontend Bootcamp </a>
+          </div>
+          <!-- Menu Items -->
+          <div class="space-x-5 hidden md:flex">
+            <a
+              href="#learn"
+              class="text-white capitalize font-thin hover:text-yellow"
+              >what you'll learn</a
+            >
+            <a
+              href="#questions"
+              class="text-light capitalize font-thin hover:text-yellow"
+              >questions</a
+            >
+            <a
+              href="#instructors"
+              class="text-light capitalize font-thin hover:text-yellow"
+              >instructors</a
+            >
+          </div>
+          <!-- Hamburger Icon -->
+          <div class="md:hidden cursor-pointer z-10">
+            <i id="hamMenu" class="fa-solid fa-bars text-white text-3xl"></i>
+          </div>
+          <!-- Mobile Menu -->
+          <div
+            id="menu"
+            class="bg-dark py-8 space-y-6 md:hidden flex flex-col items-center justify-center absolute h-screen duration-500 w-full left-0 -top-[100vh]"
+          >
+            <a
+              href="#learn"
+              class="text-lg text-light capitalize font-thin hover:text-yellow"
+              >what you'll learn</a
+            >
+            <a
+              href="#questions"
+              class="text-lg text-light capitalize font-thin hover:text-yellow"
+              >questions</a
+            >
+            <a
+              href="#instructors"
+              class="text-lg text-light capitalize font-thin hover:text-yellow"
+              >instructors</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Main Page -->
+    <main>
+      <!-- Showcase -->
+      <section class="bg-dark py-20 lg:pb-0">
+        <div class="container">
+          <div class="grid md:grid-cols-2 items-center justify-between gap-6">
+            <div class="order-2 md:order-1 text-center md:text-left">
+              <h1 class="text-white text-2xl md:text-4xl font-bold">
+                Become a <span class="text-yellow">Web Developer</span>
+              </h1>
+              <p class="text-light font-light leading-7 py-6">
+                We focus on teaching our students the fundamentals of the latest
+                and greatest technologies to prepare them for their first dev
+                role
+              </p>
+              <button
+                id="modal_btn"
+                type="button"
+                class="bg-blue text-white py-3 px-6 rounded outline-none text-lg duration-300 hover:bg-opacity-80 mb-6"
+              >
+                Start The Enrollment
+              </button>
+            </div>
+            <div class="order-1">
+              <img
+                src="../assets/showcase.svg"
+                class="w-full"
+                alt="become a web developer"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Newsletter  -->
+      <section class="py-10 bg-blue">
+        <div class="container">
+          <div
+            class="flex flex-col md:flex-row text-white justify-between items-center gap-4"
+          >
+            <h3 class="text-xl md:text-2xl font-semibold flex-1">
+              Sign Up For Our Newsletter
+            </h3>
+            <div class="flex-1">
+              <form action="">
+                <div class="flex md:justify-end w-full justify-center">
+                  <input
+                  type="text"
+                  class="rounded-l w-9/12 lg:w-4/6 px-4 py-3 outline-none text-black"
+                  placeholder="Enter Email"
+                />
+                <button
+                  type="submit"
+                  class="outline-none bg-dark px-4 rounded-r hover:bg-opacity-90"
+                >
+                  Submit
+                </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Boxes section  -->
+      <section class="py-20">
+        <div class="container">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-dark text-center text-light p-6">
+              <div class="text-4xl mb-2">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="text-2xl font-semibold">Virtual</h3>
+              <p class="py-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                quas quidem possimus dolorum esse eligendi?
+              </p>
+              <a
+                href="#"
+                class="bg-blue text-white p-2 inline-block rounded hover:bg-opacity-90"
+                >Read More</a
+              >
+            </div>
+            <div class="bg-gray text-center text-light p-6">
+              <div class="text-4xl mb-2">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <h3 class="text-2xl font-semibold">Hybrid</h3>
+              <p class="py-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                quas quidem possimus dolorum esse eligendi?
+              </p>
+              <a
+                href="#"
+                class="bg-dark text-white p-2 inline-block rounded hover:bg-opacity-90"
+                >Read More</a
+              >
+            </div>
+            <div class="bg-dark text-center text-light p-6">
+              <div class="text-4xl mb-2">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+              <h3 class="text-2xl font-semibold">In Person</h3>
+              <p class="py-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                quas quidem possimus dolorum esse eligendi?
+              </p>
+              <a
+                href="#"
+                class="bg-blue text-white p-2 inline-block rounded hover:bg-opacity-90"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Learn The Fundamentals -->
+      <section id="learn" class="py-14">
+        <div class="container">
+          <div
+            class="grid md:grid-cols-2 gap-6 items-center text-center md:text-left"
+          >
+            <div class="md:pr-10">
+              <img
+                src="../assets/fundamentals.svg"
+                class="w-full"
+                alt="Learn The Fundamentals"
+              />
+            </div>
+            <div>
+              <h2 class="text-2xl md:text-3xl font-medium">
+                Learn The Fundamentals
+              </h2>
+              <p class="font-light text-lg text-dark py-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Similique deleniti possimus magnam corporis ratione facere!
+              </p>
+              <p class="text-black text-sm leading-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                reiciendis eius autem eveniet mollitia, at asperiores suscipit
+                quae similique laboriosam iste minus placeat odit velit quos,
+                nulla architecto amet voluptates?
+              </p>
+              <a href="#" class="bg-light p-2 rounded inline-block mt-6 group">
+                <i
+                  class="fa-solid fa-angle-right pr-1 duration-300 group-hover:pr-2"
+                ></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Learn React -->
+      <section class="py-14 bg-dark">
+        <div class="container">
+          <div
+            class="grid md:grid-cols-2 gap-6 items-center text-center md:text-left text-white"
+          >
+            <div>
+              <h2 class="text-2xl md:text-3xl font-medium">
+                Learn The Fundamentals
+              </h2>
+              <p class="font-light text-lg py-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Similique deleniti possimus magnam corporis ratione facere!
+              </p>
+              <p class="text-sm leading-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                reiciendis eius autem eveniet mollitia, at asperiores suscipit
+                quae similique laboriosam iste minus placeat odit velit quos,
+                nulla architecto amet voluptates?
+              </p>
+              <a
+                href="#"
+                class="bg-light text-black p-2 rounded inline-block mt-6 group"
+              >
+                <i
+                  class="fa-solid fa-angle-right pr-1 duration-300 group-hover:pr-2"
+                ></i>
+                Read More
+              </a>
+            </div>
+            <div class="md:pl-10">
+              <img src="../assets/react.svg" class="w-full" alt="Learn React" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Question -->
+      <section id="questions" class="py-14">
+        <div class="container">
+          <h2 class="text-center font-semibold text-2xl mb-10">
+            Frequently Asked Questions
+          </h2>
+          <div class="accordion w-full md:w-3/6 mx-auto">
+            <div class="accordion_content">
+              <div
+                class="label font-light text-lg border-b border-b-gray text-black flex justify-between items-center py-4 cursor-pointer"
+              >
+                <span>Where exactly are you located?</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="accordion_text hidden pt-4 pb-8">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam.
+                </p>
+              </div>
+            </div>
+            <div class="accordion_content">
+              <div
+                class="label text-lg border-b border-b-gray text-black flex justify-between items-center py-4 cursor-pointer"
+              >
+                <span>How much does it cost to attend?</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="accordion_text hidden pt-4 pb-8">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam.
+                </p>
+              </div>
+            </div>
+            <div class="accordion_content">
+              <div
+                class="label text-lg border-b border-b-gray text-black flex justify-between items-center py-4 cursor-pointer"
+              >
+                <span>What do I need to Know?</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="accordion_text hidden pt-4 pb-8">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam.
+                </p>
+              </div>
+            </div>
+            <div class="accordion_content">
+              <div
+                class="label text-lg border-b border-b-gray text-black flex justify-between items-center py-4 cursor-pointer"
+              >
+                <span>How Do I sign up?</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="accordion_text hidden pt-4 pb-8">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam.
+                </p>
+              </div>
+            </div>
+            <div class="accordion_content">
+              <div
+                class="label text-lg text-black flex justify-between items-center py-4 cursor-pointer"
+              >
+                <span> How Do I sign up?</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="accordion_text hidden pt-4 pb-8">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit. Hic
+                  perferendis quasi consectetur esse aliquam? Aliquam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-10">
+            <a
+              href="#"
+              class="inline-block rounded bg-blue text-white py-2 px-4 hover:bg-opacity-90 cursor-pointer"
+              >More Info</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Our Instructors -->
+      <section id="instructors" class="py-14 bg-blue">
+        <div class="container">
+          <div class="mb-8 text-white text-center">
+            <h2 class="font-semibold text-xl md:text-2xl mb-1">Our Instructors</h2>
+            <p>
+              Our instructors all have 5+ years working as a web developer in
+              the industry
+            </p>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center p-4 bg-white rounded">
+              <img
+                src="../assets/pic-1.jpg"
+                class="mx-auto rounded-full"
+                alt=""
+              />
+              <h3 class="text-xl font-medium mt-2">John Doe</h3>
+              <p class="py-2 text-dark text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam
+              </p>
+              <div class="space-x-2">
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="text-center p-4 bg-white rounded">
+              <img
+                src="../assets/pic-2.jpg"
+                class="mx-auto rounded-full"
+                alt=""
+              />
+              <h3 class="text-xl font-medium mt-2">Jennifer</h3>
+              <p class="py-2 text-dark text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam
+              </p>
+              <div class="space-x-2">
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="text-center p-4 bg-white rounded">
+              <img
+                src="../assets/pic-3.jpg"
+                class="mx-auto rounded-full"
+                alt=""
+              />
+              <h3 class="text-xl font-medium mt-2">James</h3>
+              <p class="py-2 text-dark text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam
+              </p>
+              <div class="space-x-2">
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="text-center p-4 bg-white rounded">
+              <img
+                src="../assets/pic-4.jpg"
+                class="mx-auto rounded-full"
+                alt=""
+              />
+              <h3 class="text-xl font-medium mt-2">Emma</h3>
+              <p class="py-2 text-dark text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam
+              </p>
+              <div class="space-x-2">
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Info -->
+      <section class="py-14">
+           <div class="container">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="md:pr-20">
+                  <h3 class="font-semibold text-xl  md:text-2xl mb-3">Contact Info</h3>
+                  <ul>
+                    <li class="border-b border-b-gray py-2">
+                      <span class="font-semibold">Main Location:</span>
+                      <span>50 Main st Boston MA</span>
+                    </li>
+                    <li class="border-b border-b-gray py-2">
+                      <span class="font-semibold">Enrollment Phone:</span>
+                      <span>(555) 555-5555</span>
+                    </li>
+                    <li class="border-b border-b-gray py-2">
+                      <span class="font-semibold">Student Phone:</span>
+                      <span>(333) 333-3333</span>
+                    </li>
+                    <li class="border-b border-b-gray py-2">
+                      <span class="font-semibold">Enrollment Email:</span>
+                      <span>(555) enroll@frontendbc.test</span>
+                    </li>
+                    <li class="py-2">
+                      <span class="font-semibold">Student Email:</span>
+                      <span>student@frontendbc.test</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.558970894074!2d-71.06448938516724!3d42.37323744226299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370ed678c5c7b%3A0x1151236a3eb3c8e2!2s50%20Main%20St%2C%20Charlestown%2C%20MA%2002129%2C%20USA!5e0!3m2!1sen!2sde!4v1655292663245!5m2!1sen!2sde"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+           </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="text-center text-white text-sm">
+          <p>Developed by <span class="text-yellow">Eslam Saadat (Iman)</span></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal  -->
+      <div id="modal" class="bg-[rgba(0,0,0,.8)] rounded fixed w-full h-full top-0 left-0 overflow-x-hidden hidden items-center justify-center z-20">
+        <div id="modal_content" class="bg-white">
+          <div class="p-4 flex justify-between items-center border-b border-[#e1e1e1]">
+              <h5 class="font-normal">Enrollment</h5>
+              <i id="close_btn" class="fa-solid fa-times text-2xl cursor-pointer hover:text-blue"></i>
+          </div>
+          <div class="p-4">
+            <p class="mb-5">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="flex flex-col mb-4">
+                <label for="first-name" class="mb-1">First Name:</label>
+                <input type="text" id="first-name" class="border border-dark rounded outline-none py-1 px-2">
+              </div>
+              <div class="flex flex-col mb-4">
+                <label for="last-name" class="mb-1">Last Name:</label>
+                <input type="text" id="last-name" class="border border-dark rounded outline-none py-1 px-2">
+              </div>
+              <div class="flex flex-col mb-4">
+                <label for="email" class="mb-1">Email:</label>
+                <input type="email" id="email" class="border border-dark rounded outline-none py-1 px-2">
+              </div>
+              <div class="flex flex-col mb-5">
+                <label for="phone" class="mb-1">Phone:</label>
+                <input type="tel" id="phone" class="border border-dark rounded outline-none py-1 px-2">
+              </div>
+              <div>
+                <input type="submit" class="inline-block rounded bg-blue text-white py-2 px-4 hover:bg-opacity-90 cursor-pointer">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <script src="../js/scripr.js"></script>
+  </body>
+</html>

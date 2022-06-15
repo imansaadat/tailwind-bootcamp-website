@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer {
+ 
+  html{
+    @apply scroll-smooth scroll-pt-14
+  }
+
+  body {
+    @apply font-Poppins font-light;
+  }
+}
+
+body::before {
+  display: block;
+  content: '';
+  height: 50px;
+}
+
+.accordion .accordion_content.active .accordion_text {
+  display: block;
+}
+
