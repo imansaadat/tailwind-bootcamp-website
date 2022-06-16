@@ -13,6 +13,9 @@
   body {
     @apply font-Poppins font-light;
   }
+  a{
+    @apply duration-300
+  }
 }
 
 body::before {

@@ -610,6 +610,10 @@ video {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .left-0{
   left: 0px;
 }
@@ -620,6 +624,14 @@ video {
 
 .-top-\[100vh\]{
   top: -100vh;
+}
+
+.right-10{
+  right: 2.5rem;
+}
+
+.top-8{
+  top: 2rem;
 }
 
 .z-10{
@@ -711,6 +723,10 @@ video {
   height: 100%;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -719,12 +735,8 @@ video {
   width: 75%;
 }
 
-.w-4\/5{
-  width: 80%;
-}
-
-.w-2\/3{
-  width: 66.666667%;
+.w-10{
+  width: 2.5rem;
 }
 
 .flex-1{
@@ -1010,6 +1022,10 @@ video {
   line-height: 1.5rem;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1057,6 +1073,10 @@ video {
   body{
     font-family: Poppins, sans-serif;
     font-weight: 300;
+  }
+
+  a{
+    transition-duration: 300ms;
   }
 }
 
